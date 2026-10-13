@@ -13,6 +13,8 @@ python3 -m http.server 8000 --bind 0.0.0.0
 
 Az `index.html` közvetlenül böngészőben is megnyitható. Közzétételkor az `index.html`, `styles.css`, `script.js` és az `assets/` mappa együtt szükséges; bármely statikus tárhelyen kiszolgálhatók.
 
+Egyszerű kézi feltöltéshez a `publikalas/` mappát használd. Az ottani `index.html` egyetlen fájlban tartalmazza a teljes formázást, képet és működést; a teljes `publikalas/` mappa feltölthető a Netlify Drop felületére. A különálló, gyökérkönyvtári forrásfájlok a további szerkesztéshez maradnak meg.
+
 ## Tartalom
 
 Az eredeti szakaszok sorrendje megmaradt: nyitó rész, miért született meg a Short Yoga, mit kapsz, gyakorlatok/programok, módszer, előnyök, kinek ajánlott.
