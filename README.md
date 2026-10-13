@@ -33,4 +33,4 @@ Chromium böngészőben ellenőrizve 360, 390, 600, 768, 1024 és 1440 px széle
 
 Ez a tároló önálló, elkészült weboldalt tartalmaz. A `shortyoga.carrd.co` élő oldalát nem módosítottuk: nincs közvetlen, bejelentkezett Carrd-szerkesztési hozzáférésünk. Az átvezetéshez lásd a [Carrd útmutatót](content/carrd-atvezetes.md).
 
-A saját **shortyoga.fit** domain és a Namecheap/Google Workspace beállításaihoz lásd a [publikálási útmutatót](content/domain-publikalas.md). A domainbekötés még függ a tárhely- és DNS-hozzáféréstől; fájlok elkészítése nem publikálja az oldalt.
+A saját **https://shortyoga.fit** cím Netlifyra mutat. A felhasználó a publikalas/ mappát kézzel publikálta, beállította a Namecheap DNS-rekordjait, és 2026. október 13-án visszaigazolta az oldal működését. A beállításokat és az ellenőrzés kereteit a [publikálási útmutató](content/domain-publikalas.md) rögzíti. További forrásmódosításokhoz a kézi Netlify-feltöltést meg kell ismételni; a GitHub-frissítés önmagában nem frissíti ezt a kézzel publikált oldalt.

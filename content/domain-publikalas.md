@@ -4,18 +4,18 @@
 
 A weboldal publikálható statikus HTML/CSS/JavaScript, build vagy adatbázis nélkül. Tartalmazza a Facebook-oldal linkjét és az info@shortyoga.fit e-mailes elérhetőséget.
 
-A felhasználó a domaint a Namecheapnél vásárolta, és Google Workspace levelezéshez használja. A weboldal még nincs feltöltve Netlifyra. Ebben a környezetben nincs beállított Netlify-hozzáférés vagy Namecheap DNS-szerkesztési hozzáférés. A domain DNS-lekérdezése az itteni környezetben átmeneti névfeloldási hibát adott; ebből nem következik, hogy a domain nem létezik vagy nincs megfelelően beállítva.
+A felhasználó a domaint a Namecheapnél vásárolta, és Google Workspace levelezéshez használja. Az önálló publikálási változatot kézzel feltöltötte Netlifyra: https://amazing-frangollo-4b0079.netlify.app. Az elsődleges domain https://shortyoga.fit; a www.shortyoga.fit a Netlifyban az elsődleges címre irányít.
 
-A domain bekötése, a feltöltés és a nyilvános HTTPS működése még nincs igazolva.
+A felhasználó 2026. október 13-án jelezte, hogy a saját domaines oldal működik. A beküldött képernyőképen a Netlify DNS-ellenőrzése sikeres volt. A Namecheap képernyőképén az A rekord @ → 75.2.60.5 és a CNAME rekord www → amazing-frangollo-4b0079.netlify.app szerepel; a meglévő Google Workspace TXT-rekordok megmaradtak. A HTTPS működését a felhasználó igazolta, nem az itteni hálózatról végzett független kérés. Levelezési küldés/fogadás és űrlapbeküldés nem volt a teszt része.
 
 ## Netlify-feltöltés
 
 1. Jelentkezz be a saját Netlify-fiókodba.
-2. A letölthető weboldal ZIP-csomagját csomagold ki. Az index.html, styles.css, script.js, netlify.toml és assets/ legyen együtt.
-3. A Netlify kézi feltöltésénél töltsd fel a kicsomagolt mappát. Nincs build parancs; a publikálási könyvtár a mappa gyökere.
+2. A GitHub short-yoga-site ágáról letöltött ZIP-csomagot csomagold ki, és keresd meg a publikalas/ mappát. Az ottani index.html a formázást, képet és JavaScriptet is tartalmazza.
+3. A Netlify kézi feltöltésénél a teljes publikalas/ mappát töltsd fel. Nincs build parancs. A gyökérkönyvtári többfájlos forrás index.html fájlját önmagában ne töltsd fel; annak külön CSS-, JavaScript- és képfájlokra van szüksége.
 4. Ellenőrizd a kapott .netlify.app címen a weboldalt és a két programgombot.
 
-Az automatikus, fiókon belüli API-feltöltéshez NETLIFY_AUTH_TOKEN nevű titkos hozzáférési követelményt mentettünk a környezet konfigurációs tervezetébe. A saját Netlify-fiók hozzáférési kulcsát a környezet biztonságos beállításaiban lehet megadni; ne kerüljön chatbe vagy fájlba. A követelmény mentése nem hozott létre kulcsot, nem jelentkezett be és nem publikálta az oldalt. A beállítások mentése és a környezet publikálása után először a fiókelérést kell ellenőrizni.
+Az automatikus, fiókon belüli API-feltöltéshez NETLIFY_AUTH_TOKEN nevű titkos hozzáférési követelményt mentettünk a környezet konfigurációs tervezetébe. Ez nem volt szükséges a sikeres kézi publikáláshoz, és nincs beállított Netlify- vagy Namecheap API-hozzáférés ebben a környezetben. Későbbi API-alapú frissítéshez a saját Netlify-fiók hozzáférési kulcsát a környezet biztonságos beállításaiban lehet megadni; ne kerüljön chatbe vagy fájlba. A követelmény mentése önmagában nem jelentkezik be és nem publikál weboldalt.
 
 ## Domain hozzáadása
 
