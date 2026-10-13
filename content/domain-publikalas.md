@@ -6,7 +6,9 @@ A weboldal publikálható statikus HTML/CSS/JavaScript, build vagy adatbázis n�
 
 A felhasználó a domaint a Namecheapnél vásárolta, és Google Workspace levelezéshez használja. Az önálló publikálási változatot kézzel feltöltötte Netlifyra: https://amazing-frangollo-4b0079.netlify.app. Az elsődleges domain https://shortyoga.fit; a www.shortyoga.fit a Netlifyban az elsődleges címre irányít.
 
-A felhasználó 2026. október 13-án jelezte, hogy a saját domaines oldal működik. A beküldött képernyőképen a Netlify DNS-ellenőrzése sikeres volt. A Namecheap képernyőképén az A rekord @ → 75.2.60.5 és a CNAME rekord www → amazing-frangollo-4b0079.netlify.app szerepel; a meglévő Google Workspace TXT-rekordok megmaradtak. A HTTPS működését a felhasználó igazolta, nem az itteni hálózatról végzett független kérés. Levelezési küldés/fogadás és űrlapbeküldés nem volt a teszt része.
+A felhasználó 2026. október 13-án jelezte, hogy a saját domaines oldal működik a saját böngészőjében. A beküldött képernyőképen a Netlify DNS-ellenőrzése sikeres volt. A Namecheap képernyőképén az A rekord @ → 75.2.60.5 és a CNAME rekord www → amazing-frangollo-4b0079.netlify.app szerepel; a meglévő Google Workspace TXT-rekordok megmaradtak. A saját böngészőből történt elérés nem igazolta a nyilvános, kijelentkezett HTTPS-elérést. Levelezési küldés/fogadás és űrlapbeküldés nem volt a teszt része.
+
+A később beküldött Make public képernyőkép és a felhasználó pontosítása szerint a Netlify projekt nyilvánossá tétele még hátravan. A Website URL mezőben a meglévő amazing-frangollo-4b0079.netlify.app cím maradjon; a shortyoga.fit már külön, elsődleges custom domainként szerepel. A Public hozzáférés kiválasztása és a Make public gomb után kijelentkezett vagy privát böngészőablakban ellenőrizni kell a https://shortyoga.fit elérését. Addig a teljes nyilvános publikálás nem tekinthető késznek.
 
 ## Netlify-feltöltés
 
@@ -15,7 +17,7 @@ A felhasználó 2026. október 13-án jelezte, hogy a saját domaines oldal műk
 3. A Netlify kézi feltöltésénél a teljes publikalas/ mappát töltsd fel. Nincs build parancs. A gyökérkönyvtári többfájlos forrás index.html fájlját önmagában ne töltsd fel; annak külön CSS-, JavaScript- és képfájlokra van szüksége.
 4. Ellenőrizd a kapott .netlify.app címen a weboldalt és a két programgombot.
 
-Az automatikus, fiókon belüli API-feltöltéshez NETLIFY_AUTH_TOKEN nevű titkos hozzáférési követelményt mentettünk a környezet konfigurációs tervezetébe. Ez nem volt szükséges a sikeres kézi publikáláshoz, és nincs beállított Netlify- vagy Namecheap API-hozzáférés ebben a környezetben. Későbbi API-alapú frissítéshez a saját Netlify-fiók hozzáférési kulcsát a környezet biztonságos beállításaiban lehet megadni; ne kerüljön chatbe vagy fájlba. A követelmény mentése önmagában nem jelentkezik be és nem publikál weboldalt.
+Az automatikus, fiókon belüli API-feltöltéshez NETLIFY_AUTH_TOKEN nevű titkos hozzáférési követelményt mentettünk a környezet konfigurációs tervezetébe. Ez nem volt szükséges a kézi feltöltéshez, és nincs beállított Netlify- vagy Namecheap API-hozzáférés ebben a környezetben. Későbbi API-alapú frissítéshez a saját Netlify-fiók hozzáférési kulcsát a környezet biztonságos beállításaiban lehet megadni; ne kerüljön chatbe vagy fájlba. A követelmény mentése önmagában nem jelentkezik be és nem publikál weboldalt.
 
 ## Domain hozzáadása
 
